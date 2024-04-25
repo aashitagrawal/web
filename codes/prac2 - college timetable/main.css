@@ -1,0 +1,53 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #e7ad57;
+}
+
+table {
+  border-collapse: collapse;
+  width: 82%;
+  margin: 25 px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 2px solid #000;
+  padding: 12px;
+  text-align: center;
+  width: 80px;
+}
+
+th {
+  background-color: lightblue;
+  color: #fff;
+}
+
+td {
+  background-color: lightyellow;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Optional: Add some additional styling for better readability */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Style the first column */
+td:first-child {
+  background-color: lightblue;
+}
+
+/* Style the first row */
+tr:first-child td {
+  background-color: lightblue;
+}

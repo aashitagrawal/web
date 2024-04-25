@@ -1,0 +1,25 @@
+<!-- 
+        target = "content frame"
+        meaning the HTML page will open inside the existing HTML page, if this is not used then the HTML page will open in new
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Resume - About Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+
+    <frameset cols="20%, 80%">
+        <!-- Frame 1: Navigation links -->
+        <frame src="navigation.html" name="navigation_frame" scrolling="auto" noresize />
+
+        <!-- Frame 2: Content Page -->
+        <frame src="content.html" name="content_frame" />
+    </frameset>
+
+</html>

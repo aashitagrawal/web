@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Feedback Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- BEGIN: Faculty Feedback Form -->
+    <form name="myForm" method="POST" onsubmit="return false">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" name="student-name" required>
+
+        <label for="student-roll-no">Student Roll No:</label>
+        <input type="text" id="student-roll-no" name="student-roll-no" required>
+
+        <label for="faculty-name">Faculty Name:</label>
+        <select id="faculty-name" name="faculty-name" required>
+            <option value="">Select Faculty</option>
+            <option value="faculty1">Faculty 1</option>
+            <option value="faculty2">Faculty 2</option>
+            <option value="faculty3">Faculty 3</option>
+        </select>
+
+        <label for="subject-name">Subject Name:</label>
+        <select id="subject-name" name="subject-name" required>
+            <option value="">Select Subject</option>
+            <option value="subject1">Subject 1</option>
+            <option value="subject2">Subject 2</option>
+            <option value="subject3">Subject 3</option>
+        </select>
+
+        <label for="rating">Rating:</label>
+        <div class="rating-container">
+            <input type="radio" id="rating1" name="rating" value="1" required>
+            <label for="rating1">1</label>
+            <input type="radio" id="rating2" name="rating" value="2">
+            <label for="rating2">2</label>
+            <input type="radio" id="rating3" name="rating" value="3">
+            <label for="rating3">3</label>
+            <input type="radio" id="rating4" name="rating" value="4">
+            <label for="rating4">4</label>
+            <input type="radio" id="rating5" name="rating" value="5">
+            <label for="rating5">5</label>
+        </div>
+
+        <label for="suggestion">Suggestion:</label>
+        <textarea id="suggestion" name="suggestion" required></textarea>
+
+        <div class="checkbox-container">
+            <label for="send-response">Send Response to Email:</label>
+            <input type="checkbox" id="send-response" name="send-response">
+        </div>
+
+        <div>
+            <button type="submit" name="submit">Submit</button>
+            <button type="reset" name="reset">Reset</button>
+        </div>
+    </form>
+    <!-- END: Faculty Feedback Form -->
+
+</body>
+
+</html>
